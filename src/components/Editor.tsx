@@ -51,13 +51,6 @@ export default function Editor() {
     return <p className="p-4">Koi note select karo</p>; // Message when no note is selected
   }
 
-  const handleSave = () => {
-    if (activeNoteId) {
-      updateNoteContent(activeNoteId, editor.getHTML());
-      console.log("Note saved!");
-    }
-  };
-
   return (
     <div className="p-6 border rounded-lg bg-white dark:bg-gray-800 shadow-lg max-w-3xl mx-auto my-6">
       <TitleInput />
